@@ -27,7 +27,7 @@ export default function Home() {
                 <Link to="/contact" className="btn btn-ghost">Get In Touch</Link>
               </div>
               <div className="stats-strip">
-                <div><div className="stat-val">3+</div><div className="stat-lbl">Projects built</div></div>
+                <div><div className="stat-val">4+</div><div className="stat-lbl">Projects built</div></div>
                 <div><div className="stat-val">2</div><div className="stat-lbl">Certifications</div></div>
                 <div><div className="stat-val">Azure</div><div className="stat-lbl">Cloud deployed</div></div>
                 <div><div className="stat-val">2025</div><div className="stat-lbl">Dean's Commendation</div></div>
@@ -49,11 +49,11 @@ export default function Home() {
 
           <div className="skills-grid">
             {[
-              { icon: '🌐', cls: 'ic-blue',   name: 'Frontend',       tags: ['HTML5','CSS3','JavaScript','ASP.NET Web Forms','Bootstrap'] },
+              { icon: '🌐', cls: 'ic-blue',   name: 'Frontend',       tags: ['HTML5','CSS3','JavaScript','React','ASP.NET Web Forms','Bootstrap'] },
               { icon: '⚙️', cls: 'ic-green',  name: 'Backend',        tags: ['C#','.NET Framework 4.7.2','ASP.NET Web Forms','Entity Framework Core','REST APIs'] },
               { icon: '🗄️', cls: 'ic-purple', name: 'Data & ORM',     tags: ['SQL Server','T-SQL','Stored Procedures','ADO.NET','MySQL'] },
               { icon: '☁️', cls: 'ic-sky',    name: 'Cloud & APIs',   tags: ['Microsoft Azure','PayStack API','REST API','HttpClient','Postman'] },
-              { icon: '🛠️', cls: 'ic-amber',  name: 'Tools',          tags: ['Visual Studio 2022','VS Code','Git / GitHub','SSMS','Power BI','draw.io'] },
+              { icon: '🛠️', cls: 'ic-amber',  name: 'Tools',          tags: ['Visual Studio 2022','VS Code','Vite','Git / GitHub','SSMS','Power BI','draw.io','EmailJS'] },
               { icon: '🧠', cls: 'ic-red',    name: 'Practices',      tags: ['OOP','SDLC','Agile / Scrum','Systems Analysis','QA & Testing','Technical Docs'] },
             ].map((s) => (
               <div className="skill-card reveal" key={s.name}>
@@ -113,8 +113,20 @@ export default function Home() {
             </div>
           </div>
 
+          <div className="proj-card reveal">
+            <div className="proj-thumb" style={{ background: 'linear-gradient(135deg,#f0fdf4,#bbf7d0)', fontSize: '3.5rem', height: '148px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>🌍</div>
+            <div className="proj-body">
+                <h3 className="proj-title">Portfolio Website</h3>
+               <p className="proj-desc">Personal portfolio built with React and Vite — multi-page SPA with React Router, EmailJS contact form, scroll animations, and deployed on Netlify with continuous deployment from GitHub.</p>
+            <div className="proj-tags">
+                 {['React','Vite','React Router','CSS3','EmailJS','Netlify'].map(t => <span className="tag" key={t}>{t}</span>)}
+              </div>
+              <Link to="/projects" className="proj-link">Full details →</Link>
+            </div>
+          </div>
+
           <div style={{ textAlign: 'center', marginTop: '2.5rem' }}>
-            <Link to="/projects" className="btn btn-outline">View all projects</Link>
+           <Link to="/projects" className="btn btn-outline">View all projects</Link>
           </div>
         </div>
       </section>
@@ -144,14 +156,22 @@ export default function Home() {
               <span className="edu-badge">72% Overall Average</span>
               <div className="cert-row">
                 <div className="edu-period">August 2026 · Valid to August 2028</div>
-                <div className="cert-name">Oracle OCI AI Foundations Associate</div>
+                <div className="cert-name">
+                  <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=CE50C4E4B3792DE7CC074BA592FF2B1B4CAC8820E3FEDAE99F3572B4824A9AD2" target="_blank" rel="noreferrer" style={{ color: 'var(--blue)', textDecoration: 'none', fontWeight: 600 }}>
+                     Oracle OCI AI Foundations Associate ↗
+                  </a>
+               </div>
                 <div className="cert-issuer">Oracle University</div>
               </div>
               <div className="cert-row">
                 <div className="edu-period">2025</div>
-                <div className="cert-name">SQL Intermediate</div>
-                <div className="cert-issuer">SoloLearn</div>
-              </div>
+                 <div className="cert-name">
+                  <a href="https://www.sololearn.com/certificates/CC-XZG9RI0Y" target="_blank" rel="noreferrer" style={{ color: 'var(--blue)', textDecoration: 'none', fontWeight: 600 }}>
+                    SQL Intermediate ↗
+                 </a>
+               </div>
+             <div className="cert-issuer">SoloLearn</div>
+            </div>
             </div>
           </div>
         </div>

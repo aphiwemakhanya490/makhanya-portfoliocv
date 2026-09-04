@@ -63,25 +63,23 @@ export default function About() {
                 <h2 className="sub-heading">Professional Summary</h2>
                 <div className="prose">
                   <p>
-                    I'm a <strong>BCom Information Systems &amp; Technology</strong> graduate (UKZN, 2025)
-                    and <strong>Oracle OCI AI Foundations Associate</strong> certified developer, with a
-                    Dean's Commendation for Semester 1 of 2025. My core strengths are C#, .NET,
-                    ASP.NET Web Forms, SQL Server, Entity Framework Core, REST APIs, and Microsoft Azure.
+                    BCom Information Systems &amp; Technology graduate (UKZN, 2025) and{' '}
+                    <strong>Oracle OCI AI Foundations Associate</strong>, Dean's Commendation recipient
+                    (Semester 1, 2025). Led the full-stack development of a formally assessed, real-client system
+                    for <strong>KwaMshana Café</strong> — a C#/.NET WinForms POS desktop application and a
+                    companion ASP.NET Web Forms web app with PayStack payment integration, deployed on{' '}
+                    <strong>Microsoft Azure</strong>.
                   </p>
                   <p>
-                    My flagship project was a formally assessed, year-long full-stack system built for a real
-                    client — <strong>KwaMshana Café</strong>. I led development of a C#/.NET 4.7.2 WinForms
-                    POS desktop application and a companion ASP.NET Web Forms website, both sharing a
-                    centralised SQL Server database. The web app included OWIN/ASP.NET Identity authentication
-                    with SendGrid email confirmation, a PayStack REST payment gateway, iTextSharp PDF receipts,
-                    and was deployed to <strong>Microsoft Azure</strong>.
+                    Proficient across the Microsoft stack (C#, .NET, ASP.NET, Entity Framework Core, SQL Server,
+                    REST APIs) and experienced in building and deploying <strong>React</strong> web applications.
+                    Also built the <strong>Madlamini Library Management System</strong> — a full Windows Forms
+                    desktop app with catalogue, booking/cart, role-based access, and South African input validation.
                   </p>
-                  <p>
-                    As a personal project I built the <strong>Madlamini Library Management System</strong> — a
-                    full Windows Forms desktop app with catalogue, booking/cart workflow, role-based access, and
-                    South African input validation. I apply sound OOP, SDLC, and Agile/Scrum practices throughout
-                    my work and am eager to grow in graduate programmes and junior developer roles.
-                  </p>
+                    <p>
+                      Applies OOP, Agile/Scrum, and full SDLC practices throughout. Eager to contribute to graduate
+                      programmes and junior developer roles.
+                    </p>
                 </div>
               </section>
 

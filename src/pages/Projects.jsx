@@ -132,7 +132,48 @@ export default function Projects() {
             </div>
           </div>
 
-          {/* PROJECT 3 */}
+        {/* PROJECT 3: PORTFOLIO WEBSITE */}
+        <div className="proj-block reveal">
+         <div className="proj-block-inner">
+           <div className="proj-visual" style={{ background: 'linear-gradient(145deg,#f0fdf4,#bbf7d0)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '0.8rem', padding: '2.5rem 1.5rem', minHeight: '260px' }}>
+              <div className="proj-emoji">🌍</div>
+              <div className="proj-type-badge">Web · React · Deployed</div>
+            </div>
+            <div className="proj-info">
+              <div className="proj-meta">Project 03 · Personal Project · September 2026</div>
+                <h2 className="proj-heading">Portfolio Website — React &amp; Netlify</h2>
+                <p className="proj-about">
+                 multi-page personal portfolio built with <strong>React 18</strong> and <strong>Vite</strong>,
+                 showcasing projects, skills, and professional background. Implemented client-side routing,
+                 scroll-reveal animations, a fully working contact form via EmailJS, and deployed to Netlify
+                 with continuous deployment from GitHub.
+                </p>
+                <div className="proj-sub-heading">Key features</div>
+                <ul className="feat-list">
+                  <li>Multi-page SPA with React Router v6 — Home, About, Projects, and Contact pages</li>
+                  <li>Scroll-reveal animations using IntersectionObserver via a custom React hook</li>
+                  <li>Contact form integrated with EmailJS — sends emails directly to Gmail with auto-reply</li>
+                  <li>Fully responsive layout with mobile hamburger navigation</li>
+                  <li>Deployed on Netlify with continuous deployment; <code>_redirects</code> configured for SPA routing</li>
+                </ul>
+              <div className="proj-stack">
+                {['React 18','Vite 5','React Router v6','CSS3','JavaScript','EmailJS','Netlify','Git / GitHub'].map(t => (
+                  <span className="tag" key={t}>{t}</span>
+                ))}
+             </div>
+            <div className="proj-actions">
+              <a href="https://makhanya-portfolio.netlify.app" target="_blank" rel="noreferrer" className="proj-btn pb-solid">
+                Live Site ↗
+              </a>
+              <a href="https://github.com/aphiwemakhanya490/makhanya-portfoliocv.git" target="_blank" rel="noreferrer" className="proj-btn" style={{ background: 'transparent', border: '1.5px solid var(--border)', color: 'var(--text)' }}>
+                GitHub ↗
+             </a>
+           </div>
+          </div>
+        </div>
+      </div>
+
+          {/* PROJECT 4 */}
           <div className="proj-block reveal">
             <div className="proj-block-inner">
               <div className="proj-visual pv-green">
@@ -140,7 +181,7 @@ export default function Projects() {
                 <div className="proj-type-badge">Web · E-Commerce</div>
               </div>
               <div className="proj-info">
-                <div className="proj-meta">Project 03 · UKZN · May 2025</div>
+                <div className="proj-meta">Project 04 · UKZN · May 2025</div>
                 <h2 className="proj-heading">E-Commerce Website — WordPress &amp; WooCommerce</h2>
                 <p className="proj-about">
                   A fully functional WooCommerce storefront built on <strong>XAMPP</strong> for a university module.
